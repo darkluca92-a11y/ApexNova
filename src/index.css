@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Critical CSS to prevent blank page */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+
+@layer base {
+  :root {
+    --background: 210 20% 11%;
+    --foreground: 210 40% 98%;
+    --muted: 210 40% 3%;
+    --muted-foreground: 215 20.2% 65.1%;
+  }
+}
