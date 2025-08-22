@@ -7,6 +7,7 @@ const Portfolio: React.FC = () => {
   const caseStudies = [
     {
       title: 'TechCorp AI Chatbot Implementation',
+      slug: 'techcorp-ai-chatbot-implementation',
       industry: 'SaaS Technology',
       challenge: 'High volume customer support inquiries overwhelming their team',
       solution: 'Deployed intelligent chatbot handling 85% of inquiries automatically',
@@ -20,6 +21,7 @@ const Portfolio: React.FC = () => {
     },
     {
       title: 'RetailMax E-commerce Optimization',
+      slug: 'retailmax-e-commerce-optimization',
       industry: 'E-commerce',
       challenge: 'Low conversion rates and poor SEO performance',
       solution: 'AI-powered website redesign with intelligent product recommendations',
@@ -33,6 +35,7 @@ const Portfolio: React.FC = () => {
     },
     {
       title: 'MedPractice AI Phone System',
+      slug: 'medpractice-ai-phone-system',
       industry: 'Healthcare',
       challenge: 'Managing appointment bookings and patient inquiries efficiently',
       solution: 'AI-powered phone agent for appointment scheduling and basic inquiries',
@@ -46,6 +49,7 @@ const Portfolio: React.FC = () => {
     },
     {
       title: 'FinanceFlow CRM Integration',
+      slug: 'financeflow-crm-integration',
       industry: 'Financial Services',
       challenge: 'Disconnected systems causing data silos and inefficiencies',
       solution: 'Comprehensive CRM integration with automated workflow optimization',
@@ -59,6 +63,7 @@ const Portfolio: React.FC = () => {
     },
     {
       title: 'EduTech Learning Platform',
+      slug: 'edutech-learning-platform',
       industry: 'Education Technology',
       challenge: 'Scaling personalized learning experiences for thousands of students',
       solution: 'AI-driven learning platform with adaptive content delivery',
@@ -72,6 +77,7 @@ const Portfolio: React.FC = () => {
     },
     {
       title: 'LogiFlow Supply Chain AI',
+      slug: 'logiflow-supply-chain-ai',
       industry: 'Logistics',
       challenge: 'Inefficient route planning and inventory management',
       solution: 'AI-powered logistics optimization and predictive analytics',
@@ -187,7 +193,7 @@ const Portfolio: React.FC = () => {
 
                 <div className="case-study-footer">
                   <Link 
-                    to={`/portfolio/${study.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')}`}
+                    to={`/portfolio/${study.slug}`}
                     className="btn btn-secondary case-study-btn"
                   >
                     View Details <ExternalLink size={16} />
