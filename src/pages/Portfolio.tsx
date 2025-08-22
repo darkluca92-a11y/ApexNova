@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ExternalLink, ArrowRight, TrendingUp, Users, Zap, DollarSign } from 'lucide-react';
+import { ExternalLink, ArrowRight, TrendingUp, Users, Zap } from 'lucide-react';
 
 const Portfolio: React.FC = () => {
   const caseStudies = [
