@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ExternalLink, ArrowRight, TrendingUp, Users, Zap, DollarSign } from 'lucide-react';
 
@@ -237,9 +238,9 @@ const Portfolio: React.FC = () => {
               Join these successful businesses and transform your operations with AI. 
               Let's discuss how we can deliver similar results for your company.
             </p>
-            <button className="btn btn-primary">
+            <Link to="/contact" className="btn btn-primary">
               Start Your Project <ArrowRight size={20} />
-            </button>
+            </Link>
           </div>
         </div>
       </section>
