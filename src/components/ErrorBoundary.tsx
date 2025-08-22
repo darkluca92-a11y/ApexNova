@@ -86,25 +86,23 @@ class ErrorBoundary extends Component<Props, State> {
                 Go Home
               </button>
             </div>
-            {process.env.NODE_ENV === 'development' && (
-              <details style={{ textAlign: 'left', marginTop: '1rem' }}>
-                <summary style={{ cursor: 'pointer', color: '#8A2BE2' }}>
-                  Technical Details (Development Only)
-                </summary>
-                <pre style={{
-                  backgroundColor: 'rgba(0, 0, 0, 0.3)',
-                  padding: '1rem',
-                  borderRadius: '8px',
-                  marginTop: '1rem',
-                  fontSize: '0.8rem',
-                  overflow: 'auto',
-                  color: '#cbd5e1'
-                }}>
-                  {this.state.error?.toString()}
-                  {this.state.errorInfo?.componentStack}
-                </pre>
-              </details>
-            )}
+            <details style={{ textAlign: 'left', marginTop: '1rem' }}>
+              <summary style={{ cursor: 'pointer', color: '#8A2BE2' }}>
+                Technical Details
+              </summary>
+              <pre style={{
+                backgroundColor: 'rgba(0, 0, 0, 0.3)',
+                padding: '1rem',
+                borderRadius: '8px',
+                marginTop: '1rem',
+                fontSize: '0.8rem',
+                overflow: 'auto',
+                color: '#cbd5e1'
+              }}>
+                {this.state.error?.toString()}
+                {this.state.errorInfo?.componentStack}
+              </pre>
+            </details>
           </div>
         </div>
       );
