@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import About from './pages/About';
-import Portfolio from './pages/PortfolioSimple';
+import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import WebsiteDevelopment from './pages/services/WebsiteDevelopment';
 import SEOOptimization from './pages/services/SEOOptimization';
@@ -15,12 +15,7 @@ import AIChatbots from './pages/services/AIChatbots';
 import AIPhoneAgents from './pages/services/AIPhoneAgents';
 import CRMIntegrations from './pages/services/CRMIntegrations';
 import AIAutomation from './pages/services/AIAutomation';
-import TechCorpChatbot from './pages/portfolio/TechCorpChatbot.tsx';
-import RetailMaxEcommerce from './pages/portfolio/RetailMaxEcommerce.tsx';
-import MedPracticePhone from './pages/portfolio/MedPracticePhone.tsx';
-import FinanceFlowCRM from './pages/portfolio/FinanceFlowCRM.tsx';
-import EduTechLearning from './pages/portfolio/EduTechLearning.tsx';
-import LogiFlowSupplyChain from './pages/portfolio/LogiFlowSupplyChain.tsx';
+import AIChatbotCase from './pages/portfolio/AIChatbotCase';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import ParticleBackground from './components/ParticleBackground';
@@ -93,12 +88,7 @@ function App() {
               <Route path="/services/ai-automation" element={<AIAutomation />} />
               <Route path="/about" element={<About />} />
               <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/portfolio/techcorp-ai-chatbot-implementation" element={<TechCorpChatbot />} />
-              <Route path="/portfolio/retailmax-e-commerce-optimization" element={<RetailMaxEcommerce />} />
-              <Route path="/portfolio/medpractice-ai-phone-system" element={<MedPracticePhone />} />
-              <Route path="/portfolio/financeflow-crm-integration" element={<FinanceFlowCRM />} />
-              <Route path="/portfolio/edutech-learning-platform" element={<EduTechLearning />} />
-              <Route path="/portfolio/logiflow-supply-chain-ai" element={<LogiFlowSupplyChain />} />
+              <Route path="/portfolio/ai-customer-support-chatbot" element={<AIChatbotCase />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />

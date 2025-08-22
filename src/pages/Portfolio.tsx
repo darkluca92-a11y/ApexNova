@@ -1,114 +1,123 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ExternalLink, ArrowRight, TrendingUp, Users, Zap } from 'lucide-react';
+import { ExternalLink, ArrowRight, TrendingUp, Users, Zap, Clock, CheckCircle2 } from 'lucide-react';
 
 const Portfolio: React.FC = () => {
   const caseStudies = [
     {
-      title: 'AI Chatbot Implementation',
-      slug: 'techcorp-ai-chatbot-implementation',
+      id: 'ai-chatbot-saas',
+      title: 'AI Customer Support Chatbot',
+      slug: 'ai-customer-support-chatbot',
       industry: 'SaaS Technology',
-      challenge: 'High volume customer support inquiries overwhelming their team',
-      solution: 'Deployed intelligent chatbot handling majority of inquiries automatically',
+      duration: '3 months',
+      challenge: 'High volume customer support inquiries overwhelming their team, leading to long response times and decreased satisfaction',
+      solution: 'Deployed intelligent NLP-powered chatbot with custom knowledge base integration and seamless human handoff',
       results: [
-        { metric: 'Response Time', value: '75% faster', icon: <Zap size={20} /> },
-        { metric: 'Cost Reduction', value: '60% savings', icon: <TrendingUp size={20} /> },
-        { metric: 'Customer Satisfaction', value: '92% rating', icon: <Users size={20} /> }
+        { metric: 'Response Time', value: '85% faster', icon: <Zap size={20} /> },
+        { metric: 'Cost Reduction', value: '65% savings', icon: <TrendingUp size={20} /> },
+        { metric: 'Customer Satisfaction', value: '94% rating', icon: <Users size={20} /> },
+        { metric: 'Resolution Rate', value: '78% automated', icon: <CheckCircle2 size={20} /> }
       ],
       image: '🤖',
-      tags: ['Chatbots', 'Customer Service', 'NLP']
+      tags: ['AI Chatbots', 'Customer Service', 'NLP', 'Automation'],
+      testimonial: "The AI chatbot transformed our support workflow completely. Response times dropped dramatically and our team can focus on complex issues while the bot handles routine inquiries flawlessly.",
+      clientRole: 'Head of Customer Success'
     },
     {
-      title: 'E-commerce Platform Optimization',
-      slug: 'retailmax-e-commerce-optimization',
-      industry: 'E-commerce',
-      challenge: 'Low conversion rates and poor SEO performance',
-      solution: 'AI-powered website redesign with intelligent product recommendations',
+      id: 'ecommerce-optimization',
+      title: 'E-commerce Platform Enhancement',
+      slug: 'ecommerce-platform-optimization',
+      industry: 'E-commerce Retail',
+      duration: '4 months',
+      challenge: 'Low conversion rates, poor site performance, and declining organic search visibility impacting revenue growth',
+      solution: 'Comprehensive website optimization with AI-powered product recommendations, performance tuning, and SEO strategy',
       results: [
-        { metric: 'Conversion Rate', value: '85% increase', icon: <TrendingUp size={20} /> },
-        { metric: 'Organic Traffic', value: '120% growth', icon: <Users size={20} /> },
-        { metric: 'Page Load Speed', value: '65% faster', icon: <Zap size={20} /> }
+        { metric: 'Conversion Rate', value: '127% increase', icon: <TrendingUp size={20} /> },
+        { metric: 'Page Load Speed', value: '73% faster', icon: <Zap size={20} /> },
+        { metric: 'Organic Traffic', value: '156% growth', icon: <Users size={20} /> },
+        { metric: 'Revenue Impact', value: '89% boost', icon: <CheckCircle2 size={20} /> }
       ],
       image: '🛍️',
-      tags: ['Web Development', 'SEO', 'AI Recommendations']
+      tags: ['Web Development', 'SEO', 'Performance', 'AI Recommendations'],
+      testimonial: "The platform transformation exceeded our expectations. Not only did we see immediate improvements in performance, but the AI recommendations have become a key differentiator for our business.",
+      clientRole: 'E-commerce Director'
     },
     {
-      title: 'Healthcare AI Phone System',
-      slug: 'medpractice-ai-phone-system',
-      industry: 'Healthcare',
-      challenge: 'Managing appointment bookings and patient inquiries efficiently',
-      solution: 'AI-powered phone agent for appointment scheduling and basic inquiries',
+      id: 'healthcare-phone-system',
+      title: 'AI-Powered Phone Assistant',
+      slug: 'healthcare-ai-phone-system',
+      industry: 'Healthcare Services',
+      duration: '2 months',
+      challenge: 'Overwhelming appointment booking requests and patient inquiries causing staff burnout and missed opportunities',
+      solution: 'Implemented intelligent phone system with natural voice processing for appointment scheduling and basic patient support',
       results: [
-        { metric: 'Booking Efficiency', value: '90% improvement', icon: <Zap size={20} /> },
-        { metric: 'Staff Productivity', value: '70% increase', icon: <Users size={20} /> },
-        { metric: 'Patient Satisfaction', value: '94% approval', icon: <TrendingUp size={20} /> }
+        { metric: 'Booking Efficiency', value: '92% improvement', icon: <Clock size={20} /> },
+        { metric: 'Staff Productivity', value: '68% increase', icon: <Users size={20} /> },
+        { metric: 'Patient Satisfaction', value: '96% approval', icon: <TrendingUp size={20} /> },
+        { metric: 'Call Resolution', value: '84% automated', icon: <CheckCircle2 size={20} /> }
       ],
       image: '🏥',
-      tags: ['Phone Agents', 'Healthcare', 'Appointment Booking']
+      tags: ['AI Phone Agents', 'Healthcare', 'Voice AI', 'Scheduling'],
+      testimonial: "Our patients love the 24/7 availability and the natural conversation flow. It feels like talking to a real person, and our staff can now focus on providing better care instead of managing calls.",
+      clientRole: 'Practice Administrator'
     },
     {
-      title: 'Financial CRM Integration',
-      slug: 'financeflow-crm-integration',
+      id: 'crm-integration',
+      title: 'Smart CRM Integration Suite',
+      slug: 'financial-crm-automation',
       industry: 'Financial Services',
-      challenge: 'Disconnected systems causing data silos and inefficiencies',
-      solution: 'Comprehensive CRM integration with automated workflow optimization',
+      duration: '5 months',
+      challenge: 'Fragmented data across multiple systems creating inefficiencies and missed client opportunities',
+      solution: 'Built comprehensive CRM integration with automated workflows, data synchronization, and intelligent client insights',
       results: [
-        { metric: 'Process Efficiency', value: '80% improvement', icon: <Zap size={20} /> },
-        { metric: 'Data Accuracy', value: '95% precision', icon: <TrendingUp size={20} /> },
-        { metric: 'Processing Speed', value: '75% faster', icon: <Users size={20} /> }
+        { metric: 'Process Efficiency', value: '81% improvement', icon: <Zap size={20} /> },
+        { metric: 'Data Accuracy', value: '97% precision', icon: <CheckCircle2 size={20} /> },
+        { metric: 'Client Response Time', value: '79% faster', icon: <Clock size={20} /> },
+        { metric: 'Revenue Growth', value: '52% increase', icon: <TrendingUp size={20} /> }
       ],
       image: '💼',
-      tags: ['CRM Integration', 'Automation', 'Data Management']
+      tags: ['CRM Integration', 'Automation', 'Data Analytics', 'Workflows'],
+      testimonial: "The integration eliminated data silos and gave us a 360-degree view of our clients. Our team's productivity has soared, and we're closing deals faster than ever.",
+      clientRole: 'Operations Director'
     },
     {
-      title: 'Educational Learning Platform',
-      slug: 'edutech-learning-platform',
+      id: 'learning-platform',
+      title: 'Adaptive Learning Platform',
+      slug: 'ai-learning-platform',
       industry: 'Education Technology',
-      challenge: 'Scaling personalized learning experiences for thousands of students',
-      solution: 'AI-driven learning platform with adaptive content delivery',
+      duration: '6 months',
+      challenge: 'Scaling personalized education for thousands of students while maintaining quality and engagement',
+      solution: 'Developed AI-driven learning platform with adaptive content delivery, progress tracking, and personalized recommendations',
       results: [
-        { metric: 'Learning Outcomes', value: '45% improvement', icon: <TrendingUp size={20} /> },
-        { metric: 'Student Engagement', value: '65% increase', icon: <Users size={20} /> },
-        { metric: 'Operational Efficiency', value: '55% boost', icon: <Zap size={20} /> }
+        { metric: 'Learning Outcomes', value: '67% improvement', icon: <TrendingUp size={20} /> },
+        { metric: 'Student Engagement', value: '89% increase', icon: <Users size={20} /> },
+        { metric: 'Completion Rate', value: '74% higher', icon: <CheckCircle2 size={20} /> },
+        { metric: 'Instructor Efficiency', value: '58% boost', icon: <Zap size={20} /> }
       ],
       image: '🎓',
-      tags: ['EdTech', 'AI Learning', 'Personalization']
+      tags: ['EdTech', 'AI Learning', 'Personalization', 'Analytics'],
+      testimonial: "The platform revolutionized how we deliver education. Students are more engaged, learning outcomes have improved significantly, and our instructors can focus on what they do best.",
+      clientRole: 'Academic Director'
     },
     {
-      title: 'Supply Chain AI Optimization',
-      slug: 'logiflow-supply-chain-ai',
-      industry: 'Logistics',
-      challenge: 'Inefficient route planning and inventory management',
-      solution: 'AI-powered logistics optimization and predictive analytics',
+      id: 'supply-chain-optimization',
+      title: 'Supply Chain Intelligence',
+      slug: 'supply-chain-ai-optimization',
+      industry: 'Logistics & Manufacturing',
+      duration: '4 months',
+      challenge: 'Inefficient route planning and inventory management leading to increased costs and delivery delays',
+      solution: 'Implemented AI-powered logistics optimization with predictive analytics, route planning, and inventory forecasting',
       results: [
-        { metric: 'Cost Reduction', value: '25% savings', icon: <TrendingUp size={20} /> },
-        { metric: 'Delivery Speed', value: '35% faster', icon: <Zap size={20} /> },
-        { metric: 'Accuracy', value: '90% precision', icon: <Users size={20} /> }
+        { metric: 'Cost Reduction', value: '34% savings', icon: <TrendingUp size={20} /> },
+        { metric: 'Delivery Speed', value: '47% faster', icon: <Zap size={20} /> },
+        { metric: 'Inventory Accuracy', value: '93% precision', icon: <CheckCircle2 size={20} /> },
+        { metric: 'Route Efficiency', value: '62% improvement', icon: <Clock size={20} /> }
       ],
       image: '🚛',
-      tags: ['Logistics', 'Optimization', 'Predictive Analytics']
-    }
-  ];
-
-  const testimonials = [
-    {
-      quote: "ApexNova AI transformed our customer service completely. The chatbot they built handles complex inquiries better than we imagined possible.",
-      author: "Sarah Johnson",
-      title: "CTO, SaaS Technology Company",
-      company: "Technology Sector"
-    },
-    {
-      quote: "The ROI was incredible. Within 3 months, we saw significant increases in conversions and our organic traffic grew substantially.",
-      author: "Michael Chen",
-      title: "Marketing Director, E-commerce Platform",
-      company: "E-commerce Sector"
-    },
-    {
-      quote: "Our patients love the AI phone system. It's available 24/7 and handles appointments flawlessly. It's like having a perfect receptionist that never sleeps.",
-      author: "Dr. Emily Rodriguez",
-      title: "Practice Owner, Healthcare Clinic",
-      company: "Healthcare Sector"
+      tags: ['Supply Chain', 'AI Optimization', 'Predictive Analytics', 'Logistics'],
+      testimonial: "The AI system transformed our entire supply chain operation. We're saving significant costs while delivering faster than our competitors.",
+      clientRole: 'Supply Chain Manager'
     }
   ];
 
@@ -119,84 +128,96 @@ const Portfolio: React.FC = () => {
       exit={{ opacity: 0 }}
       className="page-transition"
     >
-      {/* Header */}
-      <section className="portfolio-header">
+      {/* Hero Section */}
+      <section className="portfolio-hero">
         <div className="container">
           <motion.div
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="header-content"
+            className="hero-content"
           >
             <h1>Success Stories</h1>
-            <p className="header-description">
-              Real results from real businesses. See how our AI solutions have transformed 
-              operations and driven measurable growth for our clients.
+            <p className="hero-description">
+              Real results from real businesses. Discover how our AI solutions have transformed 
+              operations, increased efficiency, and driven measurable growth across industries.
             </p>
+            <div className="portfolio-stats">
+              <div className="stat">
+                <span className="stat-number">50+</span>
+                <span className="stat-label">Projects Completed</span>
+              </div>
+              <div className="stat">
+                <span className="stat-number">98%</span>
+                <span className="stat-label">Client Satisfaction</span>
+              </div>
+              <div className="stat">
+                <span className="stat-number">3.2M</span>
+                <span className="stat-label">Hours Automated</span>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Case Studies */}
-      <section className="py-8">
+      {/* Case Studies Grid */}
+      <section className="portfolio-grid">
         <div className="container">
-          <div className="grid grid-2">
+          <div className="grid-layout">
             {caseStudies.map((study, index) => (
               <motion.div
-                key={index}
+                key={study.id}
                 initial={{ y: 30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.1 * index }}
-                className="card case-study-card"
+                className="case-study-card"
               >
-                <div className="case-study-header">
-                  <div className="case-study-icon">{study.image}</div>
-                  <div className="case-study-title">
-                    <h3>{study.title}</h3>
-                    <div className="industry-tag">{study.industry}</div>
+                <div className="card-header">
+                  <div className="project-icon">{study.image}</div>
+                  <div className="project-meta">
+                    <span className="industry-tag">{study.industry}</span>
+                    <span className="duration-tag">
+                      <Clock size={14} />
+                      {study.duration}
+                    </span>
                   </div>
                 </div>
 
-                <div className="case-study-content">
-                  <div className="challenge-solution">
-                    <div className="challenge">
-                      <strong>Challenge:</strong> {study.challenge}
-                    </div>
-                    <div className="solution">
-                      <strong>Solution:</strong> {study.solution}
-                    </div>
-                  </div>
-
-                  <div className="results">
-                    <h4>Key Results:</h4>
+                <div className="card-content">
+                  <h3 className="project-title">{study.title}</h3>
+                  <p className="project-challenge">{study.challenge}</p>
+                  
+                  <div className="results-preview">
                     <div className="results-grid">
-                      {study.results.map((result, resultIndex) => (
-                        <div key={resultIndex} className="result-item">
+                      {study.results.slice(0, 2).map((result, i) => (
+                        <div key={i} className="result-item">
                           <div className="result-icon">{result.icon}</div>
-                          <div className="result-content">
-                            <div className="result-value">{result.value}</div>
-                            <div className="result-metric">{result.metric}</div>
+                          <div className="result-data">
+                            <span className="result-value">{result.value}</span>
+                            <span className="result-metric">{result.metric}</span>
                           </div>
                         </div>
                       ))}
                     </div>
                   </div>
 
-                  <div className="case-study-tags">
-                    {study.tags.map((tag, tagIndex) => (
-                      <span key={tagIndex} className="tag">
-                        {tag}
-                      </span>
+                  <div className="project-tags">
+                    {study.tags.slice(0, 3).map((tag, i) => (
+                      <span key={i} className="tag">{tag}</span>
                     ))}
+                    {study.tags.length > 3 && (
+                      <span className="tag tag-more">+{study.tags.length - 3}</span>
+                    )}
                   </div>
                 </div>
 
-                <div className="case-study-footer">
+                <div className="card-footer">
                   <Link 
                     to={`/portfolio/${study.slug}`}
-                    className="btn btn-secondary case-study-btn"
+                    className="view-case-study"
                   >
-                    View Details <ExternalLink size={16} />
+                    View Full Case Study
+                    <ExternalLink size={16} />
                   </Link>
                 </div>
               </motion.div>
@@ -205,148 +226,203 @@ const Portfolio: React.FC = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="testimonials-section">
-        <div className="container">
-          <div className="text-center mb-4">
-            <h2>What Our Clients Say</h2>
-            <p className="section-description">
-              Don't just take our word for it. Here's what business leaders are saying about our AI solutions.
-            </p>
-          </div>
-          <div className="grid grid-3">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={index}
-                initial={{ y: 30, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.2 * index }}
-                className="card testimonial-card"
-              >
-                <div className="testimonial-quote">"{testimonial.quote}"</div>
-                <div className="testimonial-author">
-                  <div className="author-name">{testimonial.author}</div>
-                  <div className="author-title">{testimonial.title}</div>
-                  <div className="author-company">{testimonial.company}</div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
+      {/* Call to Action */}
       <section className="portfolio-cta">
         <div className="container">
-          <div className="cta-content">
-            <h2>Ready to Write Your Success Story?</h2>
+          <motion.div
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.4 }}
+            className="cta-content"
+          >
+            <h2>Ready to Create Your Success Story?</h2>
             <p>
               Join these successful businesses and transform your operations with AI. 
               Let's discuss how we can deliver similar results for your company.
             </p>
-            <Link to="/contact" className="btn btn-primary">
-              Start Your Project <ArrowRight size={20} />
-            </Link>
-          </div>
+            <div className="cta-actions">
+              <Link to="/contact" className="btn btn-primary">
+                Start Your Project
+                <ArrowRight size={20} />
+              </Link>
+              <Link to="/services" className="btn btn-secondary">
+                Explore Our Services
+              </Link>
+            </div>
+          </motion.div>
         </div>
       </section>
 
       <style jsx>{`
-        .portfolio-header {
-          padding: 8rem 0 4rem;
+        .portfolio-hero {
+          padding: 8rem 0 6rem;
           text-align: center;
+          background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(138, 43, 226, 0.05));
+          border-radius: 0 0 50px 50px;
+          margin-bottom: 6rem;
         }
 
-        .header-content {
-          max-width: 800px;
+        .hero-content {
+          max-width: 900px;
           margin: 0 auto;
         }
 
-        .header-description {
-          font-size: 1.3rem;
+        .hero-content h1 {
+          font-size: clamp(3rem, 6vw, 4.5rem);
+          margin-bottom: 2rem;
+          background: linear-gradient(135deg, #00D4FF, #8A2BE2, #00FF7F);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-weight: 700;
+        }
+
+        .hero-description {
+          font-size: 1.4rem;
           color: #94a3b8;
           line-height: 1.6;
+          margin-bottom: 4rem;
+        }
+
+        .portfolio-stats {
+          display: flex;
+          justify-content: center;
+          gap: 4rem;
+          flex-wrap: wrap;
+        }
+
+        .stat {
+          text-align: center;
+        }
+
+        .stat-number {
+          display: block;
+          font-size: 2.5rem;
+          font-weight: 700;
+          color: #00D4FF;
+          margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+          color: #8A2BE2;
+          font-weight: 500;
+          font-size: 1rem;
+        }
+
+        .portfolio-grid {
+          padding: 2rem 0 6rem;
+        }
+
+        .grid-layout {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+          gap: 3rem;
+          margin-bottom: 4rem;
         }
 
         .case-study-card {
-          display: flex;
-          flex-direction: column;
-          height: 100%;
+          background: rgba(15, 23, 42, 0.6);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 20px;
+          padding: 2.5rem;
           transition: all 0.3s ease;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .case-study-card::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 3px;
+          background: linear-gradient(90deg, #00D4FF, #8A2BE2, #00FF7F);
         }
 
         .case-study-card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 12px 40px rgba(0, 212, 255, 0.15);
+          transform: translateY(-8px);
+          box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
+          border-color: rgba(0, 212, 255, 0.3);
         }
 
-        .case-study-header {
+        .card-header {
           display: flex;
-          gap: 1.5rem;
+          align-items: center;
+          justify-content: space-between;
           margin-bottom: 2rem;
         }
 
-        .case-study-icon {
-          font-size: 3rem;
-          flex-shrink: 0;
+        .project-icon {
+          font-size: 3.5rem;
+          filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.3));
         }
 
-        .case-study-title h3 {
-          margin-bottom: 0.5rem;
-          color: #00D4FF;
+        .project-meta {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          align-items: flex-end;
         }
 
         .industry-tag {
           background: rgba(138, 43, 226, 0.2);
           color: #8A2BE2;
-          padding: 0.25rem 0.75rem;
+          padding: 0.4rem 1rem;
+          border-radius: 20px;
+          font-size: 0.85rem;
+          font-weight: 600;
+          border: 1px solid rgba(138, 43, 226, 0.3);
+        }
+
+        .duration-tag {
+          background: rgba(0, 212, 255, 0.1);
+          color: #00D4FF;
+          padding: 0.3rem 0.8rem;
           border-radius: 15px;
           font-size: 0.8rem;
-          font-weight: 500;
-          border: 1px solid rgba(138, 43, 226, 0.3);
-          display: inline-block;
+          display: flex;
+          align-items: center;
+          gap: 0.3rem;
+          border: 1px solid rgba(0, 212, 255, 0.2);
         }
 
-        .case-study-content {
-          flex: 1;
+        .card-content {
           margin-bottom: 2rem;
         }
 
-        .challenge-solution {
-          margin-bottom: 2rem;
-        }
-
-        .challenge,
-        .solution {
+        .project-title {
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: #ffffff;
           margin-bottom: 1rem;
+        }
+
+        .project-challenge {
           color: #cbd5e1;
           line-height: 1.6;
+          margin-bottom: 2rem;
+          font-size: 1.05rem;
         }
 
-        .challenge strong,
-        .solution strong {
-          color: #00D4FF;
-        }
-
-        .results h4 {
-          color: #8A2BE2;
-          margin-bottom: 1.5rem;
+        .results-preview {
+          margin-bottom: 2rem;
         }
 
         .results-grid {
           display: grid;
+          grid-template-columns: repeat(2, 1fr);
           gap: 1rem;
-          margin-bottom: 2rem;
         }
 
         .result-item {
+          background: rgba(0, 212, 255, 0.05);
+          border: 1px solid rgba(0, 212, 255, 0.15);
+          border-radius: 12px;
+          padding: 1.2rem;
           display: flex;
           align-items: center;
-          gap: 1rem;
-          padding: 1rem;
-          background: rgba(0, 212, 255, 0.05);
-          border: 1px solid rgba(0, 212, 255, 0.2);
-          border-radius: 10px;
+          gap: 0.8rem;
         }
 
         .result-icon {
@@ -354,138 +430,159 @@ const Portfolio: React.FC = () => {
           flex-shrink: 0;
         }
 
+        .result-data {
+          min-width: 0;
+        }
+
         .result-value {
-          font-size: 1.2rem;
+          display: block;
+          font-size: 1.1rem;
           font-weight: 700;
-          color: #00D4FF;
-          margin-bottom: 0.25rem;
+          color: #ffffff;
+          margin-bottom: 0.2rem;
         }
 
         .result-metric {
+          font-size: 0.85rem;
           color: #94a3b8;
-          font-size: 0.9rem;
         }
 
-        .case-study-tags {
+        .project-tags {
           display: flex;
           flex-wrap: wrap;
-          gap: 0.5rem;
-          margin-bottom: 1rem;
+          gap: 0.6rem;
         }
 
         .tag {
           background: rgba(0, 255, 127, 0.1);
           color: #00FF7F;
-          padding: 0.25rem 0.75rem;
+          padding: 0.4rem 0.9rem;
           border-radius: 15px;
           font-size: 0.8rem;
           font-weight: 500;
-          border: 1px solid rgba(0, 255, 127, 0.3);
+          border: 1px solid rgba(0, 255, 127, 0.2);
         }
 
-        .case-study-footer {
-          padding-top: 1.5rem;
+        .tag-more {
+          background: rgba(255, 255, 255, 0.05);
+          color: #94a3b8;
+          border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .card-footer {
+          padding-top: 2rem;
           border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .case-study-btn {
-          width: 100%;
-          justify-content: center;
-        }
-
-        .testimonials-section {
-          padding: 6rem 0;
-          background: rgba(0, 0, 0, 0.2);
-        }
-
-        .section-description {
-          font-size: 1.2rem;
-          color: #94a3b8;
-          max-width: 600px;
-          margin: 0 auto;
-        }
-
-        .testimonial-card {
-          text-align: center;
+        .view-case-study {
           display: flex;
-          flex-direction: column;
-          height: 100%;
-        }
-
-        .testimonial-quote {
-          font-size: 1.1rem;
-          color: #cbd5e1;
-          font-style: italic;
-          line-height: 1.6;
-          flex: 1;
-          margin-bottom: 2rem;
-        }
-
-        .testimonial-author {
-          padding-top: 1.5rem;
-          border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .author-name {
-          font-weight: 600;
+          align-items: center;
+          gap: 0.5rem;
           color: #00D4FF;
-          margin-bottom: 0.25rem;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 1rem;
+          transition: all 0.2s ease;
         }
 
-        .author-title {
-          color: #8A2BE2;
-          font-size: 0.9rem;
-          margin-bottom: 0.25rem;
-        }
-
-        .author-company {
-          color: #94a3b8;
-          font-size: 0.8rem;
+        .view-case-study:hover {
+          color: #ffffff;
+          gap: 0.8rem;
         }
 
         .portfolio-cta {
-          padding: 6rem 0;
+          padding: 8rem 0;
           text-align: center;
-          background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(138, 43, 226, 0.05));
-          margin: 4rem 0 0;
+          background: linear-gradient(135deg, rgba(0, 212, 255, 0.08), rgba(138, 43, 226, 0.08));
+          border-radius: 50px 50px 0 0;
+          margin-top: 4rem;
         }
 
         .cta-content {
-          max-width: 600px;
+          max-width: 700px;
           margin: 0 auto;
         }
 
         .cta-content h2 {
+          font-size: 2.5rem;
           margin-bottom: 1.5rem;
+          color: #ffffff;
         }
 
         .cta-content p {
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           color: #94a3b8;
-          margin-bottom: 2.5rem;
+          margin-bottom: 3rem;
+          line-height: 1.6;
+        }
+
+        .cta-actions {
+          display: flex;
+          gap: 1.5rem;
+          justify-content: center;
+          flex-wrap: wrap;
         }
 
         @media (max-width: 768px) {
-          .portfolio-header {
-            padding: 6rem 0 3rem;
+          .portfolio-hero {
+            padding: 6rem 0 4rem;
+            margin-bottom: 4rem;
           }
 
-          .case-study-header {
+          .hero-content h1 {
+            font-size: 2.5rem;
+          }
+
+          .hero-description {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+          }
+
+          .portfolio-stats {
+            gap: 2rem;
+          }
+
+          .stat-number {
+            font-size: 2rem;
+          }
+
+          .grid-layout {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+          }
+
+          .case-study-card {
+            padding: 2rem;
+          }
+
+          .card-header {
             flex-direction: column;
+            align-items: flex-start;
             gap: 1rem;
-            text-align: center;
+          }
+
+          .project-meta {
+            align-items: flex-start;
+            flex-direction: row;
+            gap: 1rem;
           }
 
           .results-grid {
             grid-template-columns: 1fr;
           }
 
-          .result-item {
-            text-align: center;
+          .cta-content h2 {
+            font-size: 2rem;
           }
 
-          .case-study-tags {
-            justify-content: center;
+          .cta-actions {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .btn {
+            width: 100%;
+            max-width: 280px;
           }
         }
       `}</style>
