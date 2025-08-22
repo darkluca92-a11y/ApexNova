@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import About from './pages/About';
-import Portfolio from './pages/PortfolioTest';
+import Portfolio from './pages/PortfolioSimple';
 import Contact from './pages/Contact';
 import WebsiteDevelopment from './pages/services/WebsiteDevelopment';
 import SEOOptimization from './pages/services/SEOOptimization';
