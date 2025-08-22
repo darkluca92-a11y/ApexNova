@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, CheckCircle, Calendar, Clock, MessageSquare } from 'lucide-react';
-import { ContactService, ContactSubmission } from '@/lib/supabase';
+import { ContactService, ContactSubmission } from '../lib/supabase';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({

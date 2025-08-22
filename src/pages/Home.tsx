@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Zap, Users, Trophy, TrendingUp } from 'lucide-react';
-import { TestimonialsSection } from '@/components/ui/testimonials-with-marquee';
+import { TestimonialsSection } from '../components/ui/testimonials-with-marquee';
 
 const Home: React.FC = () => {
   const services = [

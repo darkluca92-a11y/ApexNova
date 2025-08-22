@@ -6,85 +6,85 @@ import { ExternalLink, ArrowRight, TrendingUp, Users, Zap, DollarSign } from 'lu
 const Portfolio: React.FC = () => {
   const caseStudies = [
     {
-      title: 'TechCorp AI Chatbot Implementation',
+      title: 'AI Chatbot Implementation',
       slug: 'techcorp-ai-chatbot-implementation',
       industry: 'SaaS Technology',
       challenge: 'High volume customer support inquiries overwhelming their team',
-      solution: 'Deployed intelligent chatbot handling 85% of inquiries automatically',
+      solution: 'Deployed intelligent chatbot handling majority of inquiries automatically',
       results: [
-        { metric: 'Response Time', value: '85% faster', icon: <Zap size={20} /> },
-        { metric: 'Cost Savings', value: '$120K annually', icon: <DollarSign size={20} /> },
-        { metric: 'Customer Satisfaction', value: '94% rating', icon: <Users size={20} /> }
+        { metric: 'Response Time', value: '75% faster', icon: <Zap size={20} /> },
+        { metric: 'Cost Reduction', value: '60% savings', icon: <TrendingUp size={20} /> },
+        { metric: 'Customer Satisfaction', value: '92% rating', icon: <Users size={20} /> }
       ],
       image: '🤖',
       tags: ['Chatbots', 'Customer Service', 'NLP']
     },
     {
-      title: 'RetailMax E-commerce Optimization',
+      title: 'E-commerce Platform Optimization',
       slug: 'retailmax-e-commerce-optimization',
       industry: 'E-commerce',
       challenge: 'Low conversion rates and poor SEO performance',
       solution: 'AI-powered website redesign with intelligent product recommendations',
       results: [
-        { metric: 'Conversion Rate', value: '145% increase', icon: <TrendingUp size={20} /> },
-        { metric: 'Organic Traffic', value: '230% growth', icon: <Users size={20} /> },
-        { metric: 'Revenue', value: '$2.5M additional', icon: <DollarSign size={20} /> }
+        { metric: 'Conversion Rate', value: '85% increase', icon: <TrendingUp size={20} /> },
+        { metric: 'Organic Traffic', value: '120% growth', icon: <Users size={20} /> },
+        { metric: 'Page Load Speed', value: '65% faster', icon: <Zap size={20} /> }
       ],
       image: '🛍️',
       tags: ['Web Development', 'SEO', 'AI Recommendations']
     },
     {
-      title: 'MedPractice AI Phone System',
+      title: 'Healthcare AI Phone System',
       slug: 'medpractice-ai-phone-system',
       industry: 'Healthcare',
       challenge: 'Managing appointment bookings and patient inquiries efficiently',
       solution: 'AI-powered phone agent for appointment scheduling and basic inquiries',
       results: [
-        { metric: 'Booking Efficiency', value: '200% faster', icon: <Zap size={20} /> },
-        { metric: 'Staff Time Saved', value: '30 hours/week', icon: <Users size={20} /> },
-        { metric: 'Patient Satisfaction', value: '96% approval', icon: <TrendingUp size={20} /> }
+        { metric: 'Booking Efficiency', value: '90% improvement', icon: <Zap size={20} /> },
+        { metric: 'Staff Productivity', value: '70% increase', icon: <Users size={20} /> },
+        { metric: 'Patient Satisfaction', value: '94% approval', icon: <TrendingUp size={20} /> }
       ],
       image: '🏥',
       tags: ['Phone Agents', 'Healthcare', 'Appointment Booking']
     },
     {
-      title: 'FinanceFlow CRM Integration',
+      title: 'Financial CRM Integration',
       slug: 'financeflow-crm-integration',
       industry: 'Financial Services',
       challenge: 'Disconnected systems causing data silos and inefficiencies',
       solution: 'Comprehensive CRM integration with automated workflow optimization',
       results: [
-        { metric: 'Process Efficiency', value: '180% improvement', icon: <Zap size={20} /> },
-        { metric: 'Data Accuracy', value: '99.5% precision', icon: <TrendingUp size={20} /> },
-        { metric: 'Client Processing', value: '3x faster', icon: <Users size={20} /> }
+        { metric: 'Process Efficiency', value: '80% improvement', icon: <Zap size={20} /> },
+        { metric: 'Data Accuracy', value: '95% precision', icon: <TrendingUp size={20} /> },
+        { metric: 'Processing Speed', value: '75% faster', icon: <Users size={20} /> }
       ],
       image: '💼',
       tags: ['CRM Integration', 'Automation', 'Data Management']
     },
     {
-      title: 'EduTech Learning Platform',
+      title: 'Educational Learning Platform',
       slug: 'edutech-learning-platform',
       industry: 'Education Technology',
       challenge: 'Scaling personalized learning experiences for thousands of students',
       solution: 'AI-driven learning platform with adaptive content delivery',
       results: [
-        { metric: 'Learning Outcomes', value: '67% improvement', icon: <TrendingUp size={20} /> },
-        { metric: 'Student Engagement', value: '89% increase', icon: <Users size={20} /> },
-        { metric: 'Operational Efficiency', value: '150% boost', icon: <Zap size={20} /> }
+        { metric: 'Learning Outcomes', value: '45% improvement', icon: <TrendingUp size={20} /> },
+        { metric: 'Student Engagement', value: '65% increase', icon: <Users size={20} /> },
+        { metric: 'Operational Efficiency', value: '55% boost', icon: <Zap size={20} /> }
       ],
       image: '🎓',
       tags: ['EdTech', 'AI Learning', 'Personalization']
     },
     {
-      title: 'LogiFlow Supply Chain AI',
+      title: 'Supply Chain AI Optimization',
       slug: 'logiflow-supply-chain-ai',
       industry: 'Logistics',
       challenge: 'Inefficient route planning and inventory management',
       solution: 'AI-powered logistics optimization and predictive analytics',
       results: [
-        { metric: 'Cost Reduction', value: '35% savings', icon: <DollarSign size={20} /> },
-        { metric: 'Delivery Speed', value: '40% faster', icon: <Zap size={20} /> },
-        { metric: 'Accuracy', value: '98% precision', icon: <TrendingUp size={20} /> }
+        { metric: 'Cost Reduction', value: '25% savings', icon: <TrendingUp size={20} /> },
+        { metric: 'Delivery Speed', value: '35% faster', icon: <Zap size={20} /> },
+        { metric: 'Accuracy', value: '90% precision', icon: <Users size={20} /> }
       ],
       image: '🚛',
       tags: ['Logistics', 'Optimization', 'Predictive Analytics']
@@ -95,20 +95,20 @@ const Portfolio: React.FC = () => {
     {
       quote: "ApexNova AI transformed our customer service completely. The chatbot they built handles complex inquiries better than we imagined possible.",
       author: "Sarah Johnson",
-      title: "CTO, TechCorp Solutions",
-      company: "TechCorp"
+      title: "CTO, SaaS Technology Company",
+      company: "Technology Sector"
     },
     {
-      quote: "The ROI was incredible. Within 3 months, we saw a 145% increase in conversions and our organic traffic doubled.",
+      quote: "The ROI was incredible. Within 3 months, we saw significant increases in conversions and our organic traffic grew substantially.",
       author: "Michael Chen",
-      title: "Marketing Director, RetailMax",
-      company: "RetailMax"
+      title: "Marketing Director, E-commerce Platform",
+      company: "E-commerce Sector"
     },
     {
       quote: "Our patients love the AI phone system. It's available 24/7 and handles appointments flawlessly. It's like having a perfect receptionist that never sleeps.",
       author: "Dr. Emily Rodriguez",
-      title: "Practice Owner, MedPractice",
-      company: "MedPractice"
+      title: "Practice Owner, Healthcare Clinic",
+      company: "Healthcare Sector"
     }
   ];
 
