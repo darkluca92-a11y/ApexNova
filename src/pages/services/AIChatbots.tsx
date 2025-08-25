@@ -84,50 +84,6 @@ const AIChatbots: React.FC = () => {
     }
   ];
 
-  const pricingTiers = [
-    {
-      name: 'Starter Bot',
-      price: '$799/mo',
-      description: 'Perfect for small businesses getting started',
-      features: [
-        'Up to 1,000 conversations/month',
-        'Basic FAQ responses',
-        'Website integration',
-        'Email support',
-        'Analytics dashboard',
-        'Custom branding'
-      ]
-    },
-    {
-      name: 'Professional Bot',
-      price: '$1,499/mo',
-      description: 'Ideal for growing businesses',
-      features: [
-        'Up to 5,000 conversations/month',
-        'Advanced AI responses',
-        'Multi-platform integration',
-        'CRM integration',
-        'Lead qualification',
-        'Phone support',
-        'Custom training'
-      ],
-      featured: true
-    },
-    {
-      name: 'Enterprise Bot',
-      price: 'Custom',
-      description: 'For large organizations with complex needs',
-      features: [
-        'Unlimited conversations',
-        'Custom AI development',
-        'Multi-language support',
-        'Advanced integrations',
-        'Dedicated support team',
-        'Custom reporting',
-        'Priority updates'
-      ]
-    }
-  ];
 
   return (
     <motion.div
@@ -328,44 +284,6 @@ const AIChatbots: React.FC = () => {
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section className="pricing-section">
-        <div className="container">
-          <div className="text-center mb-4">
-            <h2>AI Chatbot Pricing</h2>
-            <p className="section-description">
-              Flexible pricing plans designed to scale with your business growth and conversation volume.
-            </p>
-          </div>
-          <div className="grid grid-3">
-            {pricingTiers.map((tier, index) => (
-              <motion.div
-                key={index}
-                initial={{ y: 30, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.1 * index }}
-                className={`card pricing-card ${tier.featured ? 'featured' : ''}`}
-              >
-                {tier.featured && <div className="featured-badge">Most Popular</div>}
-                <h3>{tier.name}</h3>
-                <div className="pricing-price">{tier.price}</div>
-                <p className="pricing-description">{tier.description}</p>
-                <ul className="pricing-features">
-                  {tier.features.map((feature, featureIndex) => (
-                    <li key={featureIndex}>
-                      <CheckCircle size={16} />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <Link to="/contact" className="btn btn-primary pricing-btn">
-                  Choose {tier.name}
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="service-cta">

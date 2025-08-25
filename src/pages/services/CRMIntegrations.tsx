@@ -84,50 +84,6 @@ const CRMIntegrations: React.FC = () => {
     }
   ];
 
-  const pricingTiers = [
-    {
-      name: 'Basic Integration',
-      price: '$1,999',
-      description: 'Simple integrations for small businesses',
-      features: [
-        'Up to 3 system connections',
-        'Basic data synchronization',
-        'Standard API integrations',
-        'Email support',
-        '30-day warranty',
-        'Documentation included'
-      ]
-    },
-    {
-      name: 'Professional Suite',
-      price: '$4,999',
-      description: 'Comprehensive integrations for growing companies',
-      features: [
-        'Up to 8 system connections',
-        'Advanced workflow automation',
-        'Custom API development',
-        'Real-time data sync',
-        'Priority support',
-        '90-day warranty',
-        'Training sessions included'
-      ],
-      featured: true
-    },
-    {
-      name: 'Enterprise Solution',
-      price: 'Custom',
-      description: 'Complex integrations for large organizations',
-      features: [
-        'Unlimited integrations',
-        'Custom middleware development',
-        'Advanced security features',
-        'Dedicated project manager',
-        '24/7 support',
-        '1-year warranty',
-        'Ongoing optimization'
-      ]
-    }
-  ];
 
   return (
     <motion.div
@@ -334,44 +290,6 @@ const CRMIntegrations: React.FC = () => {
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section className="pricing-section">
-        <div className="container">
-          <div className="text-center mb-4">
-            <h2>Integration Service Packages</h2>
-            <p className="section-description">
-              Choose the integration package that matches your business complexity and budget.
-            </p>
-          </div>
-          <div className="grid grid-3">
-            {pricingTiers.map((tier, index) => (
-              <motion.div
-                key={index}
-                initial={{ y: 30, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.1 * index }}
-                className={`card pricing-card ${tier.featured ? 'featured' : ''}`}
-              >
-                {tier.featured && <div className="featured-badge">Most Popular</div>}
-                <h3>{tier.name}</h3>
-                <div className="pricing-price">{tier.price}</div>
-                <p className="pricing-description">{tier.description}</p>
-                <ul className="pricing-features">
-                  {tier.features.map((feature, featureIndex) => (
-                    <li key={featureIndex}>
-                      <CheckCircle size={16} />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <Link to="/contact" className="btn btn-primary pricing-btn">
-                  Choose {tier.name}
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="service-cta">
@@ -643,71 +561,6 @@ const CRMIntegrations: React.FC = () => {
           line-height: 1.6;
         }
 
-        .pricing-section {
-          padding: 6rem 0;
-          background: linear-gradient(135deg, rgba(0, 212, 255, 0.02), rgba(138, 43, 226, 0.02));
-        }
-
-        .pricing-card {
-          text-align: center;
-          position: relative;
-          transition: all 0.3s ease;
-        }
-
-        .pricing-card.featured {
-          border-color: #00D4FF;
-          box-shadow: 0 8px 32px rgba(0, 212, 255, 0.15);
-          transform: scale(1.05);
-        }
-
-        .featured-badge {
-          position: absolute;
-          top: -12px;
-          left: 50%;
-          transform: translateX(-50%);
-          background: linear-gradient(135deg, #00D4FF, #8A2BE2);
-          color: white;
-          padding: 0.5rem 1.5rem;
-          border-radius: 20px;
-          font-size: 0.8rem;
-          font-weight: 600;
-        }
-
-        .pricing-price {
-          font-size: 2.5rem;
-          font-weight: 700;
-          color: #00D4FF;
-          margin: 1rem 0;
-        }
-
-        .pricing-description {
-          color: #94a3b8;
-          margin-bottom: 2rem;
-        }
-
-        .pricing-features {
-          list-style: none;
-          text-align: left;
-          margin-bottom: 2rem;
-        }
-
-        .pricing-features li {
-          display: flex;
-          align-items: center;
-          gap: 0.75rem;
-          margin-bottom: 0.75rem;
-          color: #cbd5e1;
-        }
-
-        .pricing-features svg {
-          color: #00FF7F;
-          flex-shrink: 0;
-        }
-
-        .pricing-btn {
-          width: 100%;
-          justify-content: center;
-        }
 
         .service-cta {
           padding: 6rem 0;
@@ -764,9 +617,6 @@ const CRMIntegrations: React.FC = () => {
             width: auto;
           }
 
-          .pricing-card.featured {
-            transform: none;
-          }
 
           .cta-actions {
             flex-direction: column;
