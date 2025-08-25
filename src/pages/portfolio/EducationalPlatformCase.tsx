@@ -80,7 +80,7 @@ const EducationalPlatformCase: React.FC = () => {
               </div>
               <div className="bg-gray-900 px-4 py-2 rounded-lg">
                 <span className="text-gray-400">Timeline:</span>
-                <span className="ml-2 text-white">6 months</span>
+                <span className="ml-2 text-white">4 months</span>
               </div>
               <div className="bg-gray-900 px-4 py-2 rounded-lg">
                 <span className="text-gray-400">Students:</span>
@@ -204,21 +204,21 @@ const EducationalPlatformCase: React.FC = () => {
               <div className="bg-purple-600 w-4 h-4 rounded-full mr-6 flex-shrink-0"></div>
               <div className="flex-grow">
                 <h4 className="text-lg font-semibold">Research & Analysis</h4>
-                <p className="text-gray-400">6 weeks - Learning behavior analysis, pedagogical research, and AI model design</p>
+                <p className="text-gray-400">3 weeks - Learning behavior analysis, pedagogical research, and AI model design</p>
               </div>
             </div>
             <div className="flex items-center">
               <div className="bg-blue-600 w-4 h-4 rounded-full mr-6 flex-shrink-0"></div>
               <div className="flex-grow">
                 <h4 className="text-lg font-semibold">Platform Development</h4>
-                <p className="text-gray-400">12 weeks - AI engine development, user interface design, and content management system</p>
+                <p className="text-gray-400">8 weeks - AI engine development, user interface design, and content management system</p>
               </div>
             </div>
             <div className="flex items-center">
               <div className="bg-green-600 w-4 h-4 rounded-full mr-6 flex-shrink-0"></div>
               <div className="flex-grow">
                 <h4 className="text-lg font-semibold">Testing & Optimization</h4>
-                <p className="text-gray-400">4 weeks - Beta testing with focus groups, AI model refinement, and performance optimization</p>
+                <p className="text-gray-400">3 weeks - Beta testing with focus groups, AI model refinement, and performance optimization</p>
               </div>
             </div>
             <div className="flex items-center">

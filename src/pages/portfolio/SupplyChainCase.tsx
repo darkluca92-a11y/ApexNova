@@ -80,7 +80,7 @@ const SupplyChainCase: React.FC = () => {
               </div>
               <div className="bg-gray-900 px-4 py-2 rounded-lg">
                 <span className="text-gray-400">Timeline:</span>
-                <span className="ml-2 text-white">8 months</span>
+                <span className="ml-2 text-white">4 months</span>
               </div>
               <div className="bg-gray-900 px-4 py-2 rounded-lg">
                 <span className="text-gray-400">Scale:</span>
@@ -207,28 +207,28 @@ const SupplyChainCase: React.FC = () => {
               <div className="bg-orange-600 w-4 h-4 rounded-full mr-6 flex-shrink-0"></div>
               <div className="flex-grow">
                 <h4 className="text-lg font-semibold">Discovery & Data Integration</h4>
-                <p className="text-gray-400">8 weeks - Supply chain audit, data source identification, and integration planning</p>
+                <p className="text-gray-400">4 weeks - Supply chain audit, data source identification, and integration planning</p>
               </div>
             </div>
             <div className="flex items-center">
               <div className="bg-red-600 w-4 h-4 rounded-full mr-6 flex-shrink-0"></div>
               <div className="flex-grow">
                 <h4 className="text-lg font-semibold">AI Model Development</h4>
-                <p className="text-gray-400">16 weeks - Machine learning model creation, training, and validation</p>
+                <p className="text-gray-400">8 weeks - Machine learning model creation, training, and validation</p>
               </div>
             </div>
             <div className="flex items-center">
               <div className="bg-blue-600 w-4 h-4 rounded-full mr-6 flex-shrink-0"></div>
               <div className="flex-grow">
                 <h4 className="text-lg font-semibold">System Integration & Testing</h4>
-                <p className="text-gray-400">6 weeks - ERP integration, user interface development, and comprehensive testing</p>
+                <p className="text-gray-400">3 weeks - ERP integration, user interface development, and comprehensive testing</p>
               </div>
             </div>
             <div className="flex items-center">
               <div className="bg-green-600 w-4 h-4 rounded-full mr-6 flex-shrink-0"></div>
               <div className="flex-grow">
                 <h4 className="text-lg font-semibold">Deployment & Optimization</h4>
-                <p className="text-gray-400">2 weeks - Global rollout, team training, and continuous performance optimization</p>
+                <p className="text-gray-400">1 week - Global rollout, team training, and continuous performance optimization</p>
               </div>
             </div>
           </div>
