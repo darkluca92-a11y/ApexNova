@@ -19,7 +19,6 @@ import AIChatbotCase from './pages/portfolio/AIChatbotCase';
 import EcommerceOptimizationCase from './pages/portfolio/EcommerceOptimizationCase';
 import FinancialCRMCase from './pages/portfolio/FinancialCRMCase';
 import HealthcarePhoneCase from './pages/portfolio/HealthcarePhoneCase';
-import EducationalPlatformCase from './pages/portfolio/EducationalPlatformCase';
 import SupplyChainCase from './pages/portfolio/SupplyChainCase';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
@@ -97,7 +96,6 @@ function App() {
               <Route path="/portfolio/ecommerce-platform-enhancement" element={<EcommerceOptimizationCase />} />
               <Route path="/portfolio/smart-crm-integration-suite" element={<FinancialCRMCase />} />
               <Route path="/portfolio/healthcare-ai-phone-system" element={<HealthcarePhoneCase />} />
-              <Route path="/portfolio/educational-learning-platform" element={<EducationalPlatformCase />} />
               <Route path="/portfolio/supply-chain-ai-optimization" element={<SupplyChainCase />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />

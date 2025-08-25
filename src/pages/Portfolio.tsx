@@ -27,7 +27,7 @@ const Portfolio: React.FC = () => {
     {
       id: 'ecommerce-optimization',
       title: 'E-commerce Platform Enhancement',
-      slug: 'ecommerce-platform-optimization',
+      slug: 'ecommerce-platform-enhancement',
       industry: 'E-commerce Retail',
       duration: '4 months',
       challenge: 'Low conversion rates, poor site performance, and declining organic search visibility impacting revenue growth',
@@ -65,7 +65,7 @@ const Portfolio: React.FC = () => {
     {
       id: 'crm-integration',
       title: 'Smart CRM Integration Suite',
-      slug: 'financial-crm-automation',
+      slug: 'smart-crm-integration-suite',
       industry: 'Financial Services',
       duration: '5 months',
       challenge: 'Fragmented data across multiple systems creating inefficiencies and missed client opportunities',
@@ -80,26 +80,7 @@ const Portfolio: React.FC = () => {
       tags: ['CRM Integration', 'Automation', 'Data Analytics', 'Workflows'],
       testimonial: "The integration eliminated data silos and gave us a 360-degree view of our clients. Our team's productivity has soared, and we're closing deals faster than ever.",
       clientRole: 'Operations Director'
-    },
-    {
-      id: 'learning-platform',
-      title: 'Adaptive Learning Platform',
-      slug: 'ai-learning-platform',
-      industry: 'Education Technology',
-      duration: '6 months',
-      challenge: 'Scaling personalized education for thousands of students while maintaining quality and engagement',
-      solution: 'Developed AI-driven learning platform with adaptive content delivery, progress tracking, and personalized recommendations',
-      results: [
-        { metric: 'Learning Outcomes', value: '67% improvement', icon: <TrendingUp size={20} /> },
-        { metric: 'Student Engagement', value: '89% increase', icon: <Users size={20} /> },
-        { metric: 'Completion Rate', value: '74% higher', icon: <CheckCircle2 size={20} /> },
-        { metric: 'Instructor Efficiency', value: '58% boost', icon: <Zap size={20} /> }
-      ],
-      image: '🎓',
-      tags: ['EdTech', 'AI Learning', 'Personalization', 'Analytics'],
-      testimonial: "The platform revolutionized how we deliver education. Students are more engaged, learning outcomes have improved significantly, and our instructors can focus on what they do best.",
-      clientRole: 'Academic Director'
-    },
+},
     {
       id: 'supply-chain-optimization',
       title: 'Supply Chain Intelligence',

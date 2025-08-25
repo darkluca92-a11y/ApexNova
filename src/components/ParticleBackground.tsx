@@ -22,7 +22,7 @@ const ParticleBackground: React.FC = () => {
 
     let animationId: number;
     const particles: Particle[] = [];
-    const particleCount = 80;
+    const particleCount = 50;
     const colors = ['#00D4FF', '#8A2BE2', '#00FF7F'];
 
     const resizeCanvas = () => {
