@@ -16,6 +16,11 @@ import AIPhoneAgents from './pages/services/AIPhoneAgents';
 import CRMIntegrations from './pages/services/CRMIntegrations';
 import AIAutomation from './pages/services/AIAutomation';
 import AIChatbotCase from './pages/portfolio/AIChatbotCase';
+import EcommerceOptimizationCase from './pages/portfolio/EcommerceOptimizationCase';
+import FinancialCRMCase from './pages/portfolio/FinancialCRMCase';
+import HealthcarePhoneCase from './pages/portfolio/HealthcarePhoneCase';
+import EducationalPlatformCase from './pages/portfolio/EducationalPlatformCase';
+import SupplyChainCase from './pages/portfolio/SupplyChainCase';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import ParticleBackground from './components/ParticleBackground';
@@ -89,6 +94,11 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/portfolio/ai-customer-support-chatbot" element={<AIChatbotCase />} />
+              <Route path="/portfolio/ecommerce-platform-enhancement" element={<EcommerceOptimizationCase />} />
+              <Route path="/portfolio/smart-crm-integration-suite" element={<FinancialCRMCase />} />
+              <Route path="/portfolio/healthcare-ai-phone-system" element={<HealthcarePhoneCase />} />
+              <Route path="/portfolio/educational-learning-platform" element={<EducationalPlatformCase />} />
+              <Route path="/portfolio/supply-chain-ai-optimization" element={<SupplyChainCase />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
