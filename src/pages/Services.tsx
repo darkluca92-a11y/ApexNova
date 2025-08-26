@@ -11,7 +11,6 @@ const Services: React.FC = () => {
       title: 'Website Development',
       description: 'Custom AI-powered websites that convert visitors into customers with intelligent user experiences.',
       features: ['Responsive Design', 'AI Integration', 'Performance Optimized', 'SEO Ready'],
-      price: 'Starting at $2,999'
     },
     {
       id: 'seo-optimization',
@@ -19,7 +18,6 @@ const Services: React.FC = () => {
       title: 'SEO Optimization',
       description: 'Data-driven SEO strategies powered by AI to dominate search rankings and drive organic traffic.',
       features: ['Keyword Research', 'Content Strategy', 'Technical SEO', 'Analytics & Reporting'],
-      price: 'Starting at $1,499/month'
     },
     {
       id: 'ai-chatbots',
@@ -27,7 +25,6 @@ const Services: React.FC = () => {
       title: 'AI Chatbots',
       description: '24/7 intelligent customer service that handles inquiries, bookings, and support automatically.',
       features: ['Natural Language Processing', 'Multi-platform Integration', 'Learning Capabilities', 'Analytics Dashboard'],
-      price: 'Starting at $799/month'
     },
     {
       id: 'ai-phone-agents',
@@ -35,7 +32,6 @@ const Services: React.FC = () => {
       title: 'AI Phone Agents',
       description: 'Automated phone systems with human-like voices that handle calls, appointments, and customer service.',
       features: ['Voice Recognition', 'Appointment Scheduling', 'Call Analytics', 'CRM Integration'],
-      price: 'Starting at $999/month'
     },
     {
       id: 'crm-integrations',
@@ -43,7 +39,6 @@ const Services: React.FC = () => {
       title: 'CRM Integrations',
       description: 'Seamlessly connect all your business tools with intelligent automation and data synchronization.',
       features: ['API Development', 'Data Migration', 'Workflow Automation', 'Custom Integrations'],
-      price: 'Starting at $1,999'
     },
     {
       id: 'ai-automation',
@@ -51,7 +46,6 @@ const Services: React.FC = () => {
       title: 'AI Automation',
       description: 'Custom AI solutions to automate repetitive tasks and streamline your business processes.',
       features: ['Process Analysis', 'Custom AI Models', 'Workflow Design', 'Performance Monitoring'],
-      price: 'Custom Pricing'
     }
   ];
 
@@ -132,7 +126,6 @@ const Services: React.FC = () => {
                 </div>
 
                 <div className="service-footer">
-                  <div className="service-price">{service.price}</div>
                   <div className="service-actions">
                     <Link to={service.id === 'ai-automation' ? `/services/ai-automation` : `/services/${service.id}`} className="btn btn-secondary service-btn">
                       Learn More
@@ -267,19 +260,8 @@ const Services: React.FC = () => {
         }
 
         .service-footer {
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          gap: 1rem;
           padding-top: 1.5rem;
           border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .service-price {
-          font-size: 1.2rem;
-          font-weight: 600;
-          color: #00D4FF;
-          text-align: center;
         }
 
         .service-actions {
